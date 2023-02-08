@@ -1,7 +1,5 @@
 import Head from "next/head";
 import Image from "next/image";
-import Script from "next/script";
-import Link from "next/link";
 import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 
@@ -32,26 +30,6 @@ export default function Home() {
       </Head>
       {/* <Script src="/src.js"></Script> */}
 
-      <nav className={styles.mainnav}>
-        <ul>
-          <li className={styles.navItem}>
-            <Link href="/">Home</Link>
-          </li>
-
-          <li className={styles.navItem}>
-            <Link href="/about">About</Link>
-          </li>
-
-          <li className={styles.navItem}>
-            <Link href="/blog">Blog </Link>
-          </li>
-
-          <li className={styles.navItem}>
-            <Link href="/contact">Contact</Link>
-          </li>
-        </ul>
-      </nav>
-
       <main className={styles.main}>
         <div className={styles.center}>
           <h1 className={styles.center}>Hunting</h1>
@@ -65,13 +43,14 @@ export default function Home() {
           alt="home"
           width={400}
           height={200}
+          priority
         />
         <div className={styles.center}>
           <p>A blog by hunting coder for hunting coder</p>
         </div>
 
         <div className={styles.blogs}>
-          <h2>Popular Blogs</h2>
+          <h2>Latest Blogs</h2>
           <div className={styles.blogItem}>
             <h3>How to learn JavaScript in 2023 ?</h3>
             <p>JavaScript is a language used fo design logic for the web.</p>
