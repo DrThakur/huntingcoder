@@ -10,3 +10,7 @@
 .blogItem3 {
   cursor: pointer;
 }
+.blogItemp {
+  max-width: 45vw;
+  color: #2c2b2b;
+}

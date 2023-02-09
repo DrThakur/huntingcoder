@@ -9,5 +9,6 @@
 
 .container {
   /* margin: 0 auto; */
-  padding: 0 22rem;
+  padding: 0 18rem;
+  /* max-width: 60vw; */
 }
